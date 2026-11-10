@@ -11,8 +11,15 @@
 @media(max-width:360px){.presentation-header .project-nav{gap:10px}.presentation-header .site-name{font-size:12px}}
 
 /* Use the available horizontal space for the original screen proportions. */
-.builder-presentation{--measure:1800px}
+.rl-presentation{--measure:1800px}
 .builder-presentation .screen-panels,.builder-presentation .final-screen-story,.builder-presentation .product-screen{width:100%;min-width:0;box-sizing:border-box}
 .builder-presentation .screen-panels .product-screen>a{width:100%;box-sizing:border-box;padding:12px}
 .builder-presentation .product-screen img{display:block;width:100%;max-width:100%;min-width:0;height:auto;object-fit:contain}
 @media(max-width:760px){.builder-presentation .screen-panels .product-screen>a{padding:6px}}
+
+/* Shared page frame and fixed link slots prevent project-switch layout shifts. */
+html{scrollbar-gutter:stable}
+.presentation-header .project-nav{display:grid;grid-template-columns:112px 112px;gap:24px}
+.presentation-header .project-nav a{justify-content:center}
+@media(max-width:600px){.presentation-header .project-nav{grid-template-columns:92px 92px;gap:10px}}
+@media(max-width:360px){.presentation-header .project-nav{grid-template-columns:86px 86px;gap:6px}}
