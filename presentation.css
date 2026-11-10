@@ -443,3 +443,6 @@ body.rl-presentation .cover .title-period{color:#735482}
 .case-layout>.chapter-nav a:hover{background:#e5e2e7;color:#35263e}
 .case-layout>.chapter-nav a[aria-current]{background:#e4d7e9;color:#35263e}
 .case-layout>.chapter-nav a:focus-visible{outline-color:#7440a0}
+
+/* Keep the sticky rail clear of the closing card at its lower scroll limit. */
+@media(min-width:761px){.case-layout>.chapter-nav{margin-bottom:48px}.case-layout{margin-bottom:48px}}
