@@ -23,3 +23,6 @@ html{scrollbar-gutter:stable}
 .presentation-header .project-nav a{justify-content:center}
 @media(max-width:600px){.presentation-header .project-nav{grid-template-columns:92px 92px;gap:10px}}
 @media(max-width:360px){.presentation-header .project-nav{grid-template-columns:86px 86px;gap:6px}}
+
+/* Match the laptop display to the Builder export rather than the Library ratio. */
+.rl-presentation.builder-presentation .laptop-display img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
