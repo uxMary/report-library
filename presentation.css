@@ -343,7 +343,7 @@ body.rl-presentation .cover .title-period{color:#735482}
 .chapters #concepts .product-screen>a{background:#eee7f1;border-radius:16px;padding:clamp(12px,2.5vw,28px)}
 .chapters #validation{background:#f0eaf3;border-radius:16px;padding:40px;margin-bottom:56px;border:0}
 .chapters .takeaway{color:#513b5d}
-.closing{background:#f0eaf3;border:0;border-radius:16px;margin:0 var(--gutter) 40px;padding:48px}
+.closing{background:#f0eaf3;border:0;border-radius:16px;margin:64px var(--gutter) 40px;padding:48px}
 .closing h2{color:#35263e}
 @media(max-width:720px){
  .screen-panels{padding-top:24px}.screen-panels .screen-index{margin-bottom:28px}
@@ -352,7 +352,7 @@ body.rl-presentation .cover .title-period{color:#735482}
  .screen-panels .final-screen-story{padding-bottom:36px}
  .chapters .chapter{padding:40px 0 48px}.chapters .chapter-intro{font-size:16px}
  .chapters .loop{padding:24px}.chapters #validation{padding:28px 20px;margin-bottom:40px}
- .closing{padding:32px 24px;margin-bottom:28px}
+ .closing{padding:32px 24px;margin-top:40px;margin-bottom:28px}
 }
 /* Restore the dark purple hero banner. */
 .cover,.cover::before{background:#35223f}
