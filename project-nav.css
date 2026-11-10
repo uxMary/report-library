@@ -9,3 +9,10 @@
 .presentation-header .project-nav a:hover{color:#64328a;background:transparent;text-decoration:underline;text-underline-offset:5px}
 @media(max-width:600px){.rl-presentation .presentation-header{padding-block:6px;gap:12px;flex-wrap:nowrap}.presentation-header .site-name{font-size:14px}.presentation-header .project-nav{width:auto;gap:14px}.presentation-header .project-nav a{font-size:12px;white-space:nowrap}}
 @media(max-width:360px){.presentation-header .project-nav{gap:10px}.presentation-header .site-name{font-size:12px}}
+
+/* Use the available horizontal space for the original screen proportions. */
+.builder-presentation{--measure:1800px}
+.builder-presentation .screen-panels,.builder-presentation .final-screen-story,.builder-presentation .product-screen{width:100%;min-width:0;box-sizing:border-box}
+.builder-presentation .screen-panels .product-screen>a{width:100%;box-sizing:border-box;padding:12px}
+.builder-presentation .product-screen img{display:block;width:100%;max-width:100%;min-width:0;height:auto;object-fit:contain}
+@media(max-width:760px){.builder-presentation .screen-panels .product-screen>a{padding:6px}}
