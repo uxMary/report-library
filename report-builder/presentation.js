@@ -9,9 +9,9 @@ if('IntersectionObserver'in window){
   const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
   if(visible.length)setActiveChapter(visible[0].target.classList.contains('screen-panels')?'#final-home':'#'+visible[0].target.id);
  },{rootMargin:'-15% 0px -55% 0px'});
- document.querySelectorAll('.chapter,.screen-panels').forEach(section=>observer.observe(section));
+ document.querySelectorAll('.cover,.chapter,.screen-panels').forEach(section=>observer.observe(section));
 }
-setActiveChapter(location.hash||'#final-home');
+setActiveChapter(location.hash||'#top');
 
 
 

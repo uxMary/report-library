@@ -1,6 +1,6 @@
 const links=[...document.querySelectorAll('.chapter-nav a')];
 function setActiveChapter(hash){
- const chapterHash=['#final-home','#final-detail','#final-inbox','#final-screens'].includes(hash)?'#final-home':hash;
+ const chapterHash=['#final-home','#final-detail','#final-inbox','#final-screens'].includes(hash)?'#final-home':['#concepts','#decisions','#validation','#delivery'].includes(hash)?'#research':hash;
  links.forEach(link=>{if(link.hash===chapterHash)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')});
 }
 links.forEach(link=>link.addEventListener('click',()=>setActiveChapter(link.hash)));
@@ -9,9 +9,9 @@ if('IntersectionObserver'in window){
   const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
   if(visible.length)setActiveChapter(visible[0].target.classList.contains('screen-panels')?'#final-home':'#'+visible[0].target.id);
  },{rootMargin:'-15% 0px -55% 0px'});
- document.querySelectorAll('.chapter,.screen-panels').forEach(section=>observer.observe(section));
+ document.querySelectorAll('.cover,.chapter,.screen-panels').forEach(section=>observer.observe(section));
 }
-setActiveChapter(location.hash||'#final-home');
+setActiveChapter(location.hash||'#top');
 
 
 
